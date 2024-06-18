@@ -4,12 +4,17 @@ return a NEW array where each element of the original array is yelled.
 */
 
 // Your code here 
+function yeller(wordArr) {
+    for (let i = 0; i < wordArr.length; i++) {
+        wordArr[i] = wordArr[i].toUpperCase();
+    }
+    return wordArr;
+}
 
-
-// let words1 = ['hello', 'world'];
-// let yelled1 = yeller(['hello', 'world']);
-// console.log(yelled1);              //=> [ 'HELLO!', 'WORLD!' ]
-// console.log(words1 === yelled1);   //=> false
+let words1 = ['hello', 'world'];
+let yelled1 = yeller(['hello', 'world']);
+console.log(yelled1);              //=> [ 'HELLO!', 'WORLD!' ]
+console.log(words1 === yelled1);   //=> false
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = yeller;
